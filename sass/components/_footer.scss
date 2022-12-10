@@ -1,0 +1,91 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $second-bg-color;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__wrapper {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-white-logo-color;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $footer-link-color;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__social {
+  width: 206px;
+  padding-top: 12px;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-logo-color;
+}
+
+.footer__list-social {
+  display: inline-flex;
+}
+
+.footer__item-social {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer__link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: $footer-icon-bg-color;
+  fill: $primary-white-logo-color;
+  @include transition(background-color);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer__icon-social {
+  fill: currentColor;
+}
