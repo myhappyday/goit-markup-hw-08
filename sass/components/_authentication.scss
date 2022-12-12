@@ -1,6 +1,7 @@
 .auth-nav {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  // display: flex;
+  // margin-left: auto;
 }
 
 .auth-nav__item:not(:last-child) {
