@@ -1269,4 +1269,80 @@ address {
 }
 .modal__btn:hover, .modal__btn:focus {
   background-color: #188ce8;
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  outline: transparent;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle__icon {
+  fill: #212121;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-toggle__icon:hover, .menu-toggle__icon:focus {
+  fill: #2196f3;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px 40px;
+  background-color: #ffffff;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-menu__link {
+  display: block;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
