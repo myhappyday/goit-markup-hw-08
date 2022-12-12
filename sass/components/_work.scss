@@ -1,6 +1,11 @@
 .work {
-  padding-bottom: 94px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    text-align: center;
+  }
 }
 
 .work__title {

@@ -144,6 +144,7 @@ address {
   .header__logo {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -236,36 +237,53 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .auth-nav__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.auth-nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: #757575;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .auth-nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .auth-nav__link:hover, .auth-nav__link:focus {
+    color: #2196f3;
+  }
 }
-.auth-nav__link:hover, .auth-nav__link:focus {
-  color: #2196f3;
+@media screen and (min-width: 1200px) {
+  .auth-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .auth-nav__icon {
@@ -370,9 +388,16 @@ address {
   color: #757575;
 }
 
-.work {
-  padding-bottom: 94px;
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+    text-align: center;
+  }
 }
 
 .work__title {
