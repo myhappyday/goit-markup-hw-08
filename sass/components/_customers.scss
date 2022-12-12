@@ -1,27 +1,61 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
+  @extend %section;
 }
 
 .customers__title {
   margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .customers__item {
-  width: 170px;
   height: 92px;
-  &:not(:last-child) {
+  @include widthItem(2);
+  &:nth-child(odd) {
     margin-right: $indent;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(-n + 4) {
+      margin-bottom: $indent;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @include widthItem(3);
+    &:not(:last-child) {
+      margin-right: $indent;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: $indent;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include widthItem(6);
+    &:not(:last-child) {
+      margin-right: $indent;
+    }
   }
 }
 
