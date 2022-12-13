@@ -170,15 +170,26 @@
         </div>
       </section>
 
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
               <img
-                src="./images/team-card-1.jpg"
+                srcset="
+                  ./images/team/img-1_270.jpg 270w,
+                  ./images/team/img-1_354.jpg 354w,
+                  ./images/team/img-1_450.jpg 450w,
+                  ./images/team/img-1_540.jpg 540w,
+                  ./images/team/img-1_708.jpg 708w,
+                  ./images/team/img-1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-1_450.jpg"
                 alt="Усміхнений хлопець в окулярах"
-                width="270"
+                width="450"
+                height="460"
+                loading="lazy"
               />
               <div class="team-member">
                 <h3 class="team-member__name">Ігор Дем'яненко</h3>
@@ -342,7 +353,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+
       <section class="customers">
         <div class="container">
           <h2 class="customers__title">Постійні клієнти</h2>
