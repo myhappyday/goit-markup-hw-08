@@ -74,21 +74,30 @@
 
 .hero__title {
   margin: 0 auto 30px;
-  max-width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $primary-white-logo-color;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
   display: inline-block;
   border: 1px solid transparent;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 4px;
-  min-width: 216px;
+  min-width: 200px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -97,4 +106,9 @@
   color: $primary-white-logo-color;
   background-color: $accent-color;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
 }
