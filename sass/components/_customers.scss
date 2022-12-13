@@ -24,12 +24,12 @@
 
 .customers__item {
   height: 92px;
-  @include widthItem(2);
-  &:nth-child(odd) {
-    margin-right: $indent;
-  }
 
   @media screen and (max-width: 767px) {
+    @include widthItem(2);
+    &:nth-child(odd) {
+      margin-right: $indent;
+    }
     &:nth-child(-n + 4) {
       margin-bottom: $indent;
     }
@@ -37,11 +37,8 @@
 
   @media screen and (min-width: 768px) {
     @include widthItem(3);
-    &:not(:last-child) {
+    &:not(:nth-child(3n)) {
       margin-right: $indent;
-    }
-    &:nth-child(3n + 3) {
-      margin-right: 0;
     }
   }
 
