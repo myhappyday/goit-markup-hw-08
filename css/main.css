@@ -22,12 +22,12 @@
   }
 }
 
-.customers, .team, .benefits {
+.footer, .customers, .team, .benefits {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .customers, .team, .benefits {
+  .footer, .customers, .team, .benefits {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -574,6 +574,7 @@ address {
 .team-member__position {
   margin-top: 0;
   margin-bottom: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -721,15 +722,15 @@ address {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer__wrapper {
