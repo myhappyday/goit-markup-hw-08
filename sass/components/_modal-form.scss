@@ -31,9 +31,16 @@
   border-radius: 4px;
 
   @media screen and (max-width: 479px) {
-    width: calc(100vw - 30px);
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
   }
+
+  // @media (orientation: landscape) and (max-width: 767px) {
+  //   width: 100vw;
+  //   height: 100vh;
+  //   overflow: auto;
+  // }
 
   @media screen and (min-width: 480px) {
     min-width: 450px;

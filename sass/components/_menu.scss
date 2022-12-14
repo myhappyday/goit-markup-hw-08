@@ -11,6 +11,7 @@
   z-index: 999;
   transform: translateX(100%);
   @include transition(transform);
+  overflow: auto;
 }
 
 .menu-container.is-open {

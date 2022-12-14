@@ -1204,8 +1204,9 @@ address {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    width: calc(100vw - 30px);
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1530,6 +1531,7 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 
 .menu-container.is-open {
