@@ -5,5 +5,21 @@
 .filter-btn__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  column-gap: 8px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: start;
+    max-width: 327px;
+    margin-bottom: 40px;
+    row-gap: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
