@@ -1060,6 +1060,13 @@ address {
 @media screen and (min-width: 768px) {
   .portfolio__item {
     width: calc((100% - 30px * (2 - 1)) / 2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .portfolio__item:nth-child(odd) {
     margin-right: 30px;
@@ -1086,7 +1093,19 @@ address {
 }
 
 .portfolio__link {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1147,6 +1166,9 @@ address {
 }
 
 .portfolio__card {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   background-color: #ffffff;
   border-right: 1px solid #eeeeee;

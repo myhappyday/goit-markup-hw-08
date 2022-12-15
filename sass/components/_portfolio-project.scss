@@ -14,6 +14,8 @@
     &:nth-child(odd) {
       margin-right: $indent;
     }
+    display: flex;
+    flex-direction: column;
   }
 
   @media screen and (max-width: 1199px) {
@@ -36,7 +38,10 @@
 }
 
 .portfolio__link {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  display: inline-flex;
+  flex-grow: 1;
   @include transition(box-shadow);
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -75,6 +80,7 @@
 }
 
 .portfolio__card {
+  flex-grow: 1;
   padding: 20px 24px;
   background-color: $primary-bg-color;
   border-right: 1px solid $primary-border-color;
