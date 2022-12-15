@@ -312,6 +312,8 @@ address {
   background-position: center;
   background-size: cover;
   text-align: center;
+  max-width: 480px;
+  height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg_sm.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg_sm.jpg);
 }
@@ -323,6 +325,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg_md.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg_md.jpg);
   }
@@ -1243,6 +1246,7 @@ address {
 }
 
 .modal {
+  position: relative;
   padding: 40px;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
@@ -1257,7 +1261,7 @@ address {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -1265,7 +1269,7 @@ address {
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
     max-width: 450px;
-    max-height: 609px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1528,12 +1532,11 @@ address {
 }
 
 .modal__btn {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
   min-width: 200px;
-  height: 50px;
   padding: 10px 52px;
   border-radius: 4px;
   border: 1px solid transparent;
