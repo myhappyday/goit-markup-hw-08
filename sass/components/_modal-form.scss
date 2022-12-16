@@ -7,10 +7,8 @@
   background-color: $backdrop-bg-color;
   @include transition(opacity, visibility);
 
-  @media screen and (max-width: 639px) {
-    padding: 93px 15px;
-    overflow-y: scroll;
-  }
+  padding: 93px 15px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -32,23 +30,23 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  max-width: 450px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    max-width: 450px;
-    width: 100%;
+    // max-width: 450px;
+    // width: 100%;
   }
 
-  // @media screen and (min-width: 480px) {
-  //   min-width: 450px;
-  //   min-height: 609px;
-  // }
-
   @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -214,7 +212,7 @@
 }
 
 .agree-text {
-  margin-left: 4px;
+  margin-left: 3px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
