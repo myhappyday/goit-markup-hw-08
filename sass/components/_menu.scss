@@ -96,6 +96,8 @@
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   margin-top: 48px;
 }
 

@@ -8,13 +8,13 @@
 
   @media screen and (max-width: 1199px) {
     flex-direction: column;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
 .auth-nav__item:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 
